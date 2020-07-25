@@ -62,14 +62,40 @@ console.log(myAge(48));
 // 11 - 15 lbs - 3% of their body weight 
 // > 15lbs - 2% of their body weight 
 
-// Puppies less than 1 year
+// Puppies less than 1 year // birth to <2 month, feed mom//
 // 2 - 4 months 10% of their body weight
 // 4 - 7 months 5% of their body weight 
 // 7 - 12 months 4% of their body weight
 
 // when you are finished invoke your function with the weight of 15 lbs and the age of 1 year - if your calculations are correct your result should be 0.44999999999999996
 
-
+function dogFeeder(age, pounds){
+    if (age >= 1){
+        if (pounds <= 5){
+            return pounds*.05
+        }
+        else if (pounds >=6 && pounds <=10){
+            return pounds*.04
+        }
+        else if (pounds >=11 && pounds <=15){
+            return pounds*.03}
+        else {
+            return pounds*.02
+        }
+    }
+    if (age < 1 && age >= 7/12){
+        return pounds*.04
+    }
+    else if (age < 7/12 && age >= 4/12){
+        return pounds *.05
+    }else if (age <4/12 && age >= 2/12){
+        return pounds * .10
+    }
+    else if (age < 2/12){
+        return ('Feed Mom')
+    }
+}
+    console.log(dogFeeder(1, 15));
 
 
 
@@ -131,8 +157,3 @@ console.log(myAge(48));
 /************************************************************** Stretch **************************************************************/
 //Take Rock, Paper, Sissors further
 //update your rock papers sissors code below to take a prompt from a user using the window object
-
-
-
-
-
