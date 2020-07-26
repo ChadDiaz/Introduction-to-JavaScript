@@ -106,6 +106,44 @@ function dogFeeder(age, pounds){
 // use math.random to determine the computers choice 
 // hint while you can complete this with only conditionals based on strings it may help to equate choice to a number 
 
+function winLoss(playerOption){
+   let randomSeed=Math.random()
+   let computerNumber= Math.ceil(3*randomSeed);
+   let player=0
+   
+
+   if(playerOption.toLowerCase()==="rock"){
+       player=1
+   } else if (playerOption.toLowerCase()==="paper"){
+       player=2
+   }else {
+       player=3
+   }
+   // rock: 1, paper:2, sissors:3
+   if (player===1 && computerNumber===1){
+       console.log("Tie Game")
+   }else if (player===2 && computerNumber===2){
+       console.log("Tie Game")
+   }else if (player===3 && computerNumber===3){
+       console.log("Tie Game")
+   }else if (player===1 && computerNumber===2){
+       console.log("Computer Wins")
+   }else if (player===1 && computerNumber===3){
+       console.log("Player Wins")
+   }else if (player===2 && computerNumber===1){
+       console.log("Player Wins")
+   }else if (player===2 && computerNumber===3){
+       console.log("Computer Wins")
+   }else if (player===3 && computerNumber===1){
+       console.log("Computer Wins")
+   }else if (player===3 && computerNumber===2){
+       console.log("Player Wins")
+   }
+}
+winLoss("rock")
+
+
+
 
 
 
@@ -113,13 +151,18 @@ function dogFeeder(age, pounds){
 //Metric Converter
 //a. KM to Miles - should take the number of kilometers and convert it to the equal number of miles
 
-
+function kiloToMiles(a){
+    return a*0.621371
+}
+console.log(kiloToMiles(4));
 
 
 
 //b. Feet to CM - should take the number of feet and convert it to the equal number of centimeters
-
-
+function feetToCent(a){
+    return a*30.48
+}
+console.log(feetToCent(6));
 
 
 
