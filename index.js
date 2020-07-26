@@ -206,7 +206,7 @@ for (counter = 99; counter >= 1; counter = counter - 1)
 //60s should be D 
 //and anything below 60 should be F
 let randNum=Math.floor((Math.random() * 100) + 1);
-function myGrade(randNum){
+function myGrade(){
     if (randNum>=90 && randNum<=100){
         console.log(randNum+"%. "+"A is your grade")
     }else if (randNum>=80 && randNum<=89){
