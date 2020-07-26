@@ -190,7 +190,7 @@ for (counter = 99; counter >= 1; counter = counter - 1)
     console.log("Take one down.");
     console.log("Pass it around.");
     if (counter == 1) {
-        console.log("No bottles of beer on the wall.");
+        console.log("No more bottles of beer on the wall.");
         console.log("");
     }
 }
@@ -215,7 +215,7 @@ function myGrade(randNum){
         console.log(randNum+"%. "+"C is your grade")
     }else if (randNum>=60 && randNum<=69){
         console.log(randNum+"%. "+"D is your grade")
-    }else if (randNum<=59){
+    }else {
         console.log(randNum+"%. "+"F is your grade")
     }
 }
