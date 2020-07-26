@@ -108,7 +108,7 @@ function dogFeeder(age, pounds){
 // hint while you can complete this with only conditionals based on strings it may help to equate choice to a number 
 
 function winLoss(playerOption){
-   let randomSeed=Math.random()
+   let randomSeed=Math.random();
    let computerNumber= Math.ceil(3*randomSeed);
    let player=0
    
@@ -122,23 +122,23 @@ function winLoss(playerOption){
    }
    // rock: 1, paper:2, sissors:3
    if (player===1 && computerNumber===1){
-       console.log("Tie Game")
+       console.log("Tie Game");
    }else if (player===2 && computerNumber===2){
-       console.log("Tie Game")
+       console.log("Tie Game");
    }else if (player===3 && computerNumber===3){
-       console.log("Tie Game")
+       console.log("Tie Game");
    }else if (player===1 && computerNumber===2){
-       console.log("Computer Wins")
+       console.log("Computer Wins");
    }else if (player===1 && computerNumber===3){
-       console.log("Player Wins")
+       console.log("Player Wins");
    }else if (player===2 && computerNumber===1){
-       console.log("Player Wins")
+       console.log("Player Wins");
    }else if (player===2 && computerNumber===3){
-       console.log("Computer Wins")
+       console.log("Computer Wins");
    }else if (player===3 && computerNumber===1){
-       console.log("Computer Wins")
+       console.log("Computer Wins");
    }else if (player===3 && computerNumber===2){
-       console.log("Player Wins")
+       console.log("Player Wins");
    }
 }
 winLoss("rock")
@@ -153,7 +153,7 @@ winLoss("rock")
 //a. KM to Miles - should take the number of kilometers and convert it to the equal number of miles
 
 function kiloToMiles(inPut){
-    console.log(inPut*0.621371)
+    console.log(inPut*0.621371);
 }
 kiloToMiles(34)
 
@@ -161,7 +161,8 @@ kiloToMiles(34)
 
 //b. Feet to CM - should take the number of feet and convert it to the equal number of centimeters
 function feetToCent(inPut){
-    console.log(inPut*30.48)
+    console.log(inPut*30.48);
+    console.log("");
 }
 feetToCent(22)
 
@@ -171,8 +172,28 @@ feetToCent(22)
 // 99 bottles of soda on the wall
 // create a function called annoyingSong
 // the function should take a starting number as an argument and count down - at each iteration it should log (number) bottles of soda on the wall, (number) bottles of soda, take one down pass it around (number left over) bottles of soda on the wall`
-// function annoyingSong
 
+var bottles;
+for (counter = 99; counter >= 1; counter = counter - 1) 
+{
+    if (counter == 1) {
+        bottles = 'bottle';
+    } else {
+        bottles = 'bottles';
+    }
+    console.log(counter+" "+bottles+" of beer on the wall.");
+    if (counter < 99) {
+        console.log("");
+        console.log(counter+" "+bottles+" of beer on the wall.");
+    }
+    console.log(counter+" "+bottles+" of beer.");
+    console.log("Take one down.");
+    console.log("Pass it around.");
+    if (counter == 1) {
+        console.log("No bottles of beer on the wall.");
+        console.log("");
+    }
+}
 
 
 
@@ -184,20 +205,21 @@ feetToCent(22)
 //70s should be Cs 
 //60s should be D 
 //and anything below 60 should be F
-function myGrade(a){
-    if (a>=90 && a<=100){
-        console.log("A is your grade")
-    }else if (a>=80 && a<=89){
-        console.log("B is your grade")
-    }else if (a>=70 && a<=79){
-        console.log("C is your grade")
-    }else if (a>=60 && a<=69){
-        console.log("D is your grade")
-    }else if (a<=59){
-        console.log("F is your grade")
+let randNum=Math.floor((Math.random() * 100) + 1);
+function myGrade(randNum){
+    if (randNum>=90 && randNum<=100){
+        console.log(randNum+"%. "+"A is your grade")
+    }else if (randNum>=80 && randNum<=89){
+        console.log(randNum+"%. "+"B is your grade")
+    }else if (randNum>=70 && randNum<=79){
+        console.log(randNum+"%. "+"C is your grade")
+    }else if (randNum>=60 && randNum<=69){
+        console.log(randNum+"%. "+"D is your grade")
+    }else if (randNum<=59){
+        console.log(randNum+"%. "+"F is your grade")
     }
 }
-myGrade(64)
+myGrade(randNum);
 
 
 
