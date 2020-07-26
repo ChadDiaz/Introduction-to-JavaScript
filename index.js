@@ -1,17 +1,18 @@
 /************************************************************** Task 1: Warm-up! **************************************************************/
 //Task a: declare a variable called votingAge, console log true if age > 18 (no function required)
-const votingAge = 25
-if (votingAge>18) {
-    console.log("true");
+function votingAge(a){
+    if (a >=18){
+        console.log("true")
+    }else {
+        console.log("false")
+    }
 }
-
-
-
+votingAge(12)
 
 //Task b: declare a variable and then use a conditional to change the value of that variable based on the value assigned to a second variable (no function required)
 
 let myCat
-const myDog = "Poo";
+const myDog = "bark";
 
 if (myDog == "woof") {
     myCat = "meow";
@@ -33,9 +34,9 @@ console.log(integer);
 
 //Task d: Write a function to multiply a*b 
 function multiply(a,b){
-    return a*b
+    console.log(a*b)
 }
-console.log(multiply(4,5));
+multiply(16,3)
 
 
 
@@ -44,9 +45,9 @@ console.log(multiply(4,5));
 //Age in Dog years
 //write a function that takes your age and returns it to you in dog years - they say that 1 human year is equal to seven dog years 
 function myAge (a){
-    return a*7
+    console.log(a*7 + " years old in dog years")
 }   
-console.log(myAge(48));
+myAge(16)
 
 
 
@@ -151,18 +152,18 @@ winLoss("rock")
 //Metric Converter
 //a. KM to Miles - should take the number of kilometers and convert it to the equal number of miles
 
-function kiloToMiles(a){
-    return a*0.621371
+function kiloToMiles(inPut){
+    console.log(inPut*0.621371)
 }
-console.log(kiloToMiles(4));
+kiloToMiles(34)
 
 
 
 //b. Feet to CM - should take the number of feet and convert it to the equal number of centimeters
-function feetToCent(a){
-    return a*30.48
+function feetToCent(inPut){
+    console.log(inPut*30.48)
 }
-console.log(feetToCent(6));
+feetToCent(22)
 
 
 
@@ -170,7 +171,7 @@ console.log(feetToCent(6));
 // 99 bottles of soda on the wall
 // create a function called annoyingSong
 // the function should take a starting number as an argument and count down - at each iteration it should log (number) bottles of soda on the wall, (number) bottles of soda, take one down pass it around (number left over) bottles of soda on the wall`
-
+// function annoyingSong
 
 
 
@@ -183,7 +184,20 @@ console.log(feetToCent(6));
 //70s should be Cs 
 //60s should be D 
 //and anything below 60 should be F
-
+function myGrade(a){
+    if (a>=90 && a<=100){
+        console.log("A is your grade")
+    }else if (a>=80 && a<=89){
+        console.log("B is your grade")
+    }else if (a>=70 && a<=79){
+        console.log("C is your grade")
+    }else if (a>=60 && a<=69){
+        console.log("D is your grade")
+    }else if (a<=59){
+        console.log("F is your grade")
+    }
+}
+myGrade(64)
 
 
 
