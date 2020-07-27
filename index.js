@@ -93,40 +93,40 @@ console.log( "Your dog needs " , dogFeeder(1, 15), " of food.");
 // use math.random to determine the computers choice
 // hint while you can complete this with only conditionals based on strings it may help to equate choice to a number
 
-// function winLoss(playerOption) {
-//   let computerNumber = Math.floor(Math.random() * 3 + 1);
-//   // let player = 0;
-//   let player=prompt("Please enter `rock`, `paper`, or `scissors`");
+function winLoss(playerOption) {
+  let computerNumber = Math.floor(Math.random() * 3 + 1);
+  // let player = 0;
+  let player=0;
   
-//   if (player.toLowerCase() === "rock") {
-//     player = 1;
-//   } else if (player.toLowerCase() === "paper") {
-//     player = 2;
-//   } else {
-//     player = 3;
-//   }
-//   // rock: 1, paper:2, sissors:3
-//   if (player === 1 && computerNumber === 1) {
-//     console.log("Tie Game");
-//   } else if (player === 2 && computerNumber === 2) {
-//     console.log("Tie Game");
-//   } else if (player === 3 && computerNumber === 3) {
-//     console.log("Tie Game");
-//   } else if (player === 1 && computerNumber === 2) {
-//     console.log("Computer Wins");
-//   } else if (player === 1 && computerNumber === 3) {
-//     console.log("Player Wins");
-//   } else if (player === 2 && computerNumber === 1) {
-//     console.log("Player Wins");
-//   } else if (player === 2 && computerNumber === 3) {
-//     console.log("Computer Wins");
-//   } else if (player === 3 && computerNumber === 1) {
-//     console.log("Computer Wins");
-//   } else if (player === 3 && computerNumber === 2) {
-//     console.log("Player Wins");
-//   }
-// }
-// winLoss()
+  if (playerOption.toLowerCase() === "rock") {
+    player = 1;
+  } else if (playerOption.toLowerCase() === "paper") {
+    player = 2;
+  } else {
+    player = 3;
+  }
+  // rock: 1, paper:2, sissors:3
+  if (player === 1 && computerNumber === 1) {
+    console.log("Tie Game");
+  } else if (player === 2 && computerNumber === 2) {
+    console.log("Tie Game");
+  } else if (player === 3 && computerNumber === 3) {
+    console.log("Tie Game");
+  } else if (player === 1 && computerNumber === 2) {
+    console.log("Computer Wins");
+  } else if (player === 1 && computerNumber === 3) {
+    console.log("Player Wins");
+  } else if (player === 2 && computerNumber === 1) {
+    console.log("Player Wins");
+  } else if (player === 2 && computerNumber === 3) {
+    console.log("Computer Wins");
+  } else if (player === 3 && computerNumber === 1) {
+    console.log("Computer Wins");
+  } else if (player === 3 && computerNumber === 2) {
+    console.log("Player Wins");
+  }
+}
+winLoss("rock")
 
 /************************************************************** Task 5 **************************************************************/
 //Metric Converter
@@ -155,8 +155,8 @@ function annoyingSong (numBottles) {
     bottles = "bottles"
   }
   console.log(`${i} ${bottles} of soda on the wall, ${i} ${bottles} of soda. Take one down, pass it around, ${i-1} ${bottles} of soda on the wall.`);
-  }
-  
+ }
+ console.log("");  
 }
 annoyingSong(5)
 
@@ -203,41 +203,41 @@ myGrade(randNum);
 /************************************************************** Stretch **************************************************************/
 //Take Rock, Paper, Sissors further
 //update your rock papers sissors code below to take a prompt from a user using the window object
-function winLoss(playerOption) {
-  let computerNumber = Math.floor(Math.random() * 3 + 1);
-  // let player = 0;
-  let player=prompt("Please enter `rock`, `paper`, or `scissors`", "rock paper scissors");
+// function winLoss(playerOption) {
+//   let computerNumber = Math.floor(Math.random() * 3 + 1);
+//   // let player = 0;
+//   let player=prompt("Please enter `rock`, `paper`, or `scissors`", "rock paper scissors");
   
-  if (player.toLowerCase() === "rock") {
-    player = 1;
-  } else if (player.toLowerCase() === "paper") {
-    player = 2;
-  } else if (player.toLowerCase() === "scissors"){
-    player = 3;
-  } else if (player.toLowerCase() == null){
-    player=Math.floor(Math.random() * 3 + 1);
-  }else {
-    player=Math.floor(Math.random() * 3 + 1);
-  }
-  // rock: 1, paper:2, sissors:3
-  if (player === 1 && computerNumber === 1) {
-    console.log("Tie Game");
-  } else if (player === 2 && computerNumber === 2) {
-    console.log("Tie Game");
-  } else if (player === 3 && computerNumber === 3) {
-    console.log("Tie Game");
-  } else if (player === 1 && computerNumber === 2) {
-    console.log("Computer Wins");
-  } else if (player === 1 && computerNumber === 3) {
-    console.log("Player Wins");
-  } else if (player === 2 && computerNumber === 1) {
-    console.log("Player Wins");
-  } else if (player === 2 && computerNumber === 3) {
-    console.log("Computer Wins");
-  } else if (player === 3 && computerNumber === 1) {
-    console.log("Computer Wins");
-  } else if (player === 3 && computerNumber === 2) {
-    console.log("Player Wins");
-  }
-}
-winLoss()
+//   if (player.toLowerCase() === "rock") {
+//     player = 1;
+//   } else if (player.toLowerCase() === "paper") {
+//     player = 2;
+//   } else if (player.toLowerCase() === "scissors"){
+//     player = 3;
+//   } else if (player.toLowerCase() == null){
+//     player=Math.floor(Math.random() * 3 + 1);
+//   }else {
+//     player=Math.floor(Math.random() * 3 + 1);
+//   }
+//   // rock: 1, paper:2, sissors:3
+//   if (player === 1 && computerNumber === 1) {
+//     console.log("Tie Game");
+//   } else if (player === 2 && computerNumber === 2) {
+//     console.log("Tie Game");
+//   } else if (player === 3 && computerNumber === 3) {
+//     console.log("Tie Game");
+//   } else if (player === 1 && computerNumber === 2) {
+//     console.log("Computer Wins");
+//   } else if (player === 1 && computerNumber === 3) {
+//     console.log("Player Wins");
+//   } else if (player === 2 && computerNumber === 1) {
+//     console.log("Player Wins");
+//   } else if (player === 2 && computerNumber === 3) {
+//     console.log("Computer Wins");
+//   } else if (player === 3 && computerNumber === 1) {
+//     console.log("Computer Wins");
+//   } else if (player === 3 && computerNumber === 2) {
+//     console.log("Player Wins");
+//   }
+// }
+// winLoss()
