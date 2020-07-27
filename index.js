@@ -149,16 +149,16 @@ feetToCent(22);
 // the function should take a starting number as an argument and count down - at each iteration it should log (number) bottles of soda on the wall, (number) bottles of soda, take one down pass it around (number left over) bottles of soda on the wall`
 function annoyingSong (numBottles) {
   for (let i = numBottles; i >= 0; i--){
-  if (i==1){
-    bottles = "bottle"
-  }else {
+  if (i>=1 || i<=0){
     bottles = "bottles"
+  }if (i==1) {
+    bottles = "bottle"
   }
-  console.log(`${i} ${bottles} of soda on the wall, ${i} ${bottles} of soda. Take one down, pass it around, ${i-1} ${bottles} of soda on the wall.`);
+  console.log(`${i +" "+bottles} of soda on the wall, ${i+" "+bottles} of soda. Take one down, pass it around, ${i-1+" "+ bottles} of soda on the wall.`);
  }
  console.log("");  
 }
-annoyingSong(5)
+annoyingSong(4)
 
 /************************************************************** Task 7 **************************************************************/
 //Grade Calculator
@@ -216,7 +216,7 @@ myGrade(randNum);
 //     player = 3;
 //   } else if (player.toLowerCase() == null){
 //     player=Math.floor(Math.random() * 3 + 1);
-//   }else {
+//   } else {
 //     player=Math.floor(Math.random() * 3 + 1);
 //   }
 //   // rock: 1, paper:2, sissors:3
