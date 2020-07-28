@@ -87,8 +87,8 @@ function dogFeeder(age, pounds) {
 console.log( "Your dog needs " , dogFeeder(1, 15), " of food.");
 
 /************************************************************** Task 4 **************************************************************/
-// Rock, Paper, Sissors
-// Your function should take a string (either rock paper or sissors)
+// Rock, Paper, Scissors
+// Your function should take a string (either rock paper or scissors)
 // it should return you won or you lost based on the rules of the game (you may need to look up the rules if you have not played before)
 // use math.random to determine the computers choice
 // hint while you can complete this with only conditionals based on strings it may help to equate choice to a number
@@ -105,7 +105,7 @@ function winLoss(playerOption) {
   } else {
     player = 3;
   }
-  // rock: 1, paper:2, sissors:3
+  // rock: 1, paper:2, scissors:3
   if (player === 1 && computerNumber === 1) {
     console.log("Tie Game");
   } else if (player === 2 && computerNumber === 2) {
@@ -126,7 +126,7 @@ function winLoss(playerOption) {
     console.log("Player Wins");
   }
 }
-winLoss("rock")
+winLoss("paper")
 
 /************************************************************** Task 5 **************************************************************/
 //Metric Converter
@@ -142,7 +142,7 @@ function feetToCent(inPut) {
   console.log(inPut * 30.48);
   console.log("");
 }
-feetToCent(22);
+feetToCent(6);
 /************************************************************** Task 6 **************************************************************/
 // 99 bottles of soda on the wall
 // create a function called annoyingSong
@@ -189,15 +189,14 @@ myGrade(randNum);
 // Hint - you may need to study tomorrow's traning kit on arrays
 // try looking up the .includes() method
 
-// let saying = ["Now is the time for All good men to come to the Aid of their country"];
-// let count=0
-// function countVowels(){
-//     if (saying.includes("a"|| "e" || "i"|| "o"|| "u" || "A" || "E" || "I" || "O" || "U")){
-//      console.log(count+=1); 
-//     }
-// }
-
-
+let saying = "Now is the time for All good men to come to the Aid of their country";
+// console.log(saying.length);
+const countVowels= saying.substring(0,68)
+  if (saying.includes('a'||'e'||'i'||'o'||'u'||'A'||'E'||'I'||'O'||'U')){
+    return(countVowels.length);
+  }
+  
+console.log(countVowels);
 
 
 /************************************************************** Stretch **************************************************************/
