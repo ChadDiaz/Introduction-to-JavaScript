@@ -95,7 +95,6 @@ console.log( "Your dog needs " , dogFeeder(1, 15), " of food.");
 
 function winLoss(playerOption) {
   let computerNumber = Math.floor(Math.random() * 3 + 1);
-  // let player = 0;
   let player=0;
   
   if (playerOption.toLowerCase() === "rock") {
