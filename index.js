@@ -2,9 +2,9 @@
 //Task a: declare a variable called votingAge, console log true if age > 18 (no function required)
 let votingAge=33
   if (votingAge >= 18) {
-    console.log("answer to task1 is "+"true");
+    console.log("answer to task 1 is true");
   } else {
-    console.log("false");
+    console.log("answer to task 1 is false");
   }
 
 
