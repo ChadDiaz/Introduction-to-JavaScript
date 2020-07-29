@@ -147,7 +147,7 @@ feetToCent(6);
 // create a function called annoyingSong
 // the function should take a starting number as an argument and count down - at each iteration it should log (number) bottles of soda on the wall, (number) bottles of soda, take one down pass it around (number left over) bottles of soda on the wall`
 function annoyingSong (numBottles) {
-  for (let i = numBottles; i >= 0; i--){
+  for (let i = numBottles; i >= 1; i--){
   if (i>=1 || i<=0){
     bottles = "bottles"
   }if (i==1) {
@@ -157,7 +157,7 @@ function annoyingSong (numBottles) {
  }
  console.log("");  
 }
-annoyingSong(4)
+annoyingSong(9)
 
 /************************************************************** Task 7 **************************************************************/
 //Grade Calculator
