@@ -1,13 +1,13 @@
 /************************************************************** Task 1: Warm-up! **************************************************************/
 //Task a: declare a variable called votingAge, console log true if age > 18 (no function required)
-function votingAge(a) {
-  if (a >= 18) {
-    console.log("true");
+let votingAge=33
+  if (votingAge >= 18) {
+    console.log("answer to task1 is "+"true");
   } else {
     console.log("false");
   }
-}
-votingAge(12);
+
+
 
 //Task b: declare a variable and then use a conditional to change the value of that variable based on the value assigned to a second variable (no function required)
 
@@ -189,14 +189,14 @@ myGrade(randNum);
 // Hint - you may need to study tomorrow's traning kit on arrays
 // try looking up the .includes() method
 
-let saying = "Now is the time for All good men to come to the Aid of their country";
-// console.log(saying.length);
-const countVowels= saying.substring(0,68)
-  if (saying.includes('a'||'e'||'i'||'o'||'u'||'A'||'E'||'I'||'O'||'U')){
-    return(countVowels.length);
-  }
+// let saying = "Now is the time for All good men to come to the Aid of their country";
+// // console.log(saying.length);
+// const countVowels= saying.substring(0,68)
+//   if (saying.includes('a'||'e'||'i'||'o'||'u'||'A'||'E'||'I'||'O'||'U')){
+//     return(countVowels.length);
+//   }
   
-console.log(countVowels);
+// console.log(countVowels);
 
 
 /************************************************************** Stretch **************************************************************/
