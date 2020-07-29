@@ -40,7 +40,7 @@ multiply(16, 3);
 //Age in Dog years
 //write a function that takes your age and returns it to you in dog years - they say that 1 human year is equal to seven dog years
 function myAge(a) {
-  console.log(a * 7 + " years old in dog years");
+  console.log("answer to task 2 is " + a * 7 + " years old in dog years");
 }
 myAge(15);
 
@@ -133,13 +133,13 @@ winLoss("paper")
 //a. KM to Miles - should take the number of kilometers and convert it to the equal number of miles
 
 function kiloToMiles(inPut) {
-  console.log(inPut * 0.621371);
+  console.log("Answer to task 5a is " + inPut * 0.621371);
 }
 kiloToMiles(34);
 
 //b. Feet to CM - should take the number of feet and convert it to the equal number of centimeters
 function feetToCent(inPut) {
-  console.log(inPut * 30.48);
+  console.log("Answer to task 5b is " + inPut * 30.48);
   console.log("");
 }
 feetToCent(6);
